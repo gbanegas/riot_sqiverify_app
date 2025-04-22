@@ -1,0 +1,21 @@
+MODULE := sqisign3
+
+CFLAGS += -Wno-sign-compare
+CFLAGS += -O3
+CFLAGS += -Wno-unused-parameter
+
+SRC += fp_p65376_32.c
+SRC += constants.c
+SRC += hash_cha.c
+SRC += fips202.c
+SRC += sqisign.c
+SRC += e0_basis.c
+SRC += mp.c
+SRC += encoded_verification.c
+SRC += fp2.c
+SRC += fp.c
+
+
+
+
+include $(RIOTBASE)/Makefile.base
